@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07131f">
+  <title>FELIX KE BOOSTER PRO</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">FELIX <span>KE BOOSTER</span> PRO</a>
+    <button id="menuBtn" class="icon-btn">☰</button>
+    <nav id="nav">
+      <a href="#services">Services</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#support">Support</a>
+      <button id="loginBtn" class="btn small">Login</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="pill">KENYA • KES • DIGITAL GROWTH</div>
+        <h1>Your Digital Growth <span>Starts Here.</span></h1>
+        <p>Browse digital marketing services, fund your wallet securely and manage orders from one dashboard.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn">Explore Services</a>
+          <button id="heroLogin" class="btn ghost">Create Account</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="orb"></div>
+        <div class="mini-card"><b>Fast checkout</b><small>Paystack powered</small></div>
+        <div class="mini-card"><b>Order tracking</b><small>Live status where supported</small></div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">CATALOGUE</div>
+          <h2>Choose a service</h2>
+        </div>
+        <input id="search" class="search" placeholder="Search services...">
+      </div>
+      <div id="filters" class="filters"></div>
+      <div id="servicesGrid" class="grid"></div>
+    </section>
+
+    <section id="dashboard" class="section dashboard">
+      <div class="section-head">
+        <div><div class="eyebrow">ACCOUNT</div><h2>Your dashboard</h2></div>
+      </div>
+      <div id="dashContent" class="dash-card">
+        <p>Login to view your wallet and orders.</p>
+        <button id="dashLogin" class="btn">Login</button>
+      </div>
+    </section>
+
+    <section id="support" class="section">
+      <div class="section-head"><div><div class="eyebrow">HELP</div><h2>Support</h2></div></div>
+      <div class="support-card">
+        <p>Need help with an order or payment? Sign in and open a support ticket.</p>
+        <button id="supportLogin" class="btn">Open Support</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <b>FELIX KE BOOSTER PRO</b>
+    <span>Third-party services are subject to provider and platform rules. No platform endorsement is implied.</span>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button id="closeModal" class="close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
